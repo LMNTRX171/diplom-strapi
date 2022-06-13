@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cbs",
+  "info": {
+    "name": "cb",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banksy": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "banksies": {
+      "collection": "banksy",
+      "via": "cbs",
+      "dominant": true
+    }
+  }
+}

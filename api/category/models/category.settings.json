@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "arts": {
+      "unique": true,
+      "private": true,
+      "collection": "arts",
+      "via": "categories",
+      "dominant": true
+    },
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    }
+  }
+}

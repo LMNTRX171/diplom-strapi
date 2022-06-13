@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/moderns",
+      "handler": "moderns.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/moderns/count",
+      "handler": "moderns.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/moderns/:id",
+      "handler": "moderns.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/moderns",
+      "handler": "moderns.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/moderns/:id",
+      "handler": "moderns.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/moderns/:id",
+      "handler": "moderns.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
